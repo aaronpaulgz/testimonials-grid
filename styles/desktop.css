@@ -1,0 +1,51 @@
+body {
+  display: flex;
+}
+
+.main {
+  width: 1110px;
+  height: 572px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+}
+
+.card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.card1 {
+  grid-area: card1;
+  background-position: 360px 2px;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+  -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
+  -moz-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
+}
+
+.card4 {
+  grid-area: card4;
+  -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
+  -moz-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.24);
+}
+
+.card4 img {
+  border: solid 2px var(--moderate-violet);
+}
+
+.card5 {
+  grid-area: card5;
+}
